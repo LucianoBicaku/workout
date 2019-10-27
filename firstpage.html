@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.10.2.min.js"></script>
+    <title>WorkOut</title>
+</head>
+<body>
+    <div class="app">
+        <h1 class="tittle">Workout Morning<br> Routine</h1>
+        <div class="sound-picker">
+                <button id="show-music" style="display: block;">
+                    <p style="font-size: 300%;">&#9834</p>
+                </button>
+
+                <button id="close-music" style="display: none;">
+                    <p style="font-size: 300%;">&#10005;</p>
+                </button>
+    
+                <div id="column">
+                    <div class="card">
+                        <div id="image">
+                            <img src="nf-search.jpg"/>
+                        </div>
+                      <div class="container">
+                        <h4 id="songTitle">NF The-Search</h4>
+                        <div id="buttons">
+                            <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+                            <button id="play" onclick="playOrPauseSong()"><img src="Play.png"/></button>
+                            <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Chest WorkOut</h3>
+                <button data-time="10">Exercsise 1</button>
+                <button data-time="23">Exercsise 1</button>
+                <button data-time="0">Exercsise 1</button>
+                <button data-time="4">Exercsise 1</button>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Abs WorkOut</h3>
+                <button data-time="26">Exercsise 1</button>
+                <button data-time="12">Exercsise 1</button>
+                <button data-time="3">Exercsise 1</button>
+                <button data-time="4">Exercsise 1</button>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Shoulders WorkOut</h3>
+                <button data-time="42">Exercsise 1</button>
+                <button data-time="12">Exercsise 1</button>
+                <button data-time="44">Exercsise 1</button>
+                <button data-time="20">Exercsise 1</button>
+            </div>
+        </div>
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Legs WorkOut</h3>
+                <button data-time="36">Exercsise 1</button>
+                <button data-time="30">Exercsise 1</button>
+                <button data-time="69">Exercsise 1</button>
+                <button data-time="29">Exercsise 1</button>
+            </div>
+        </div>
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Back WorkOut</h3>
+                <button data-time="15">Exercsise 1</button>
+                <button data-time="17">Exercsise 1</button>
+                <button data-time="18">Exercsise 1</button>
+                <button data-time="55">Exercsise 1</button>
+            </div>
+        </div>
+ 
+        <div class="player-container container1">
+                <div class="circle"> <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(110,110)">
+                    <circle r="100" class="e-c-base"/>
+                    <g transform="rotate(-90)">
+                      <circle r="100" class="e-c-progress"/>
+                      <g id="e-pointer">
+                        <circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+                      </g>
+                    </g>
+                  </g>
+                  </svg> 
+                </div>
+                <div class="controlls">
+                  <div class="display-remain-time">00:00</div>
+                  <button class="play-timer" id="pause-timer"></button>
+                </div>
+        </div>
+
+        <div class="exercise-select">
+            <button id="menu"> <p style="font-size: 200%;">&#9776;</p></button>
+            <div id="menu-items">
+                <button id="close-menu">Close</button>
+                <button id="cardio" data-time="20">Cardio</button>
+                <button id="myBtn">Chest</button>
+                <button id="myBtn2">Shoulders</button>
+                <button id="myBtn3">Legs</button>
+                <button id="myBtn1">Abs</button>
+                <button id="myBtn4">Back</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
